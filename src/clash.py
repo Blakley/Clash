@@ -19,6 +19,8 @@ pyautogui.FAILSAFE = True
 # ==================== Main Class ====================
 class Clash():
 	def __init__(self):
+		# By default, the following positions assume you have 1920 by 1080 resolution
+		# You can adjust these values by using running pyautogui.position() in a python interperter and getting the position of your desired values
 		self.positions = {
 			'game_area' : 			(1373, 35),
 			'my_clan' : 			(809, 66),
@@ -89,7 +91,6 @@ class Clash():
 			return False
 
 		# troops filter
-		'''
 		troops = response.get('troops')
 		barb = troops[0]
 		archer = troops[1]
@@ -103,8 +104,7 @@ class Clash():
 		dragon = troops[8]
 		if int(dragon['level']) < 3:
 			return False 
-		'''
-
+			
 		return True
 
 	# invites a player
