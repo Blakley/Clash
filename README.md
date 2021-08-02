@@ -6,7 +6,7 @@ Clash Of Clans clan-member invitation automation
  * Ability to invite and filter players to your clan via: townhall, player rank, and troop rank
  * Can modify code to add additional filter parameters such as by builderhall
 
-## Info
+## Understanding the Code
 By default, some of the core functionality is based upon `pyautogui.position()` which is a function
 in the `pyautogui` module that allows you to get the (x, y) coordinates of your mouse.
 We use this function to get the values of specific Clash of Clans buttons and input areas.
@@ -21,6 +21,13 @@ self.positions = {
 }
 ```
 
+To get the townhall and trophy amount of players, we use the offical Clash of Clans API
+You will need to create a develeopers account to get started. [Clash API](https://developer.clashofclans.com/#/login)
+After creating an account and obtaining your `clash api token`
+change the following snippet of code to accept your token
+```
+self.token = 'your_clash_api_token'
+```
 
 ## Dependencies
 
