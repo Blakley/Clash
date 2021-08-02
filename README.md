@@ -12,12 +12,13 @@ in the `pyautogui` module that allows you to get the (x, y) coordinates of your 
 We use this function to get the values of specific Clash of Clans buttons and input areas.
 
 Below is a code snippet that shows how buttons from the game are assigned to (x, y) coordinate pairs on the screen.
-You can adjust these values if you experience any issue or if your screen size differs.
+You can adjust these values if you experience any issue or if your screen resolution differs from 1920 by 1080.
+ - Note: Run BlueStacks5 in full screen mode
 ```
 self.positions = {
-			'game_area' : 			(1373, 35),
-			'my_clan' : 			(809, 66),
-			'find_new_members': 	(516, 733),
+			'game_area' : (1373, 35),
+			'my_clan' : (809, 66),
+			'find_new_members': (516, 733),
 }
 ```
 
@@ -27,6 +28,18 @@ After creating an account and obtaining your `clash api token`
 change the following snippet of code to accept your token
 ```
 self.token = 'your_clash_api_token'
+```
+
+Currently, we invite players that are th9 with 1000 trophies, we can easily edit this as well
+as add other filters taken from the clash api
+
+Below is a snippet that demonstrates how to filter members based on if their archer and barbarian are level 4 and above
+```
+troops = response.get('troops')
+		barb = troops[0]
+		archer = troops[1]
+		if int(archer['level']) < 4 and int(barb['level']) < 4:
+			return False 
 ```
 
 ## Dependencies
