@@ -2,6 +2,8 @@
 
 Clash Of Clans clan-member invitation automation
 
+![alt text](https://img.redbull.com/images/c_crop,x_0,y_0,h_1000,w_1167/c_fill,w_650,h_540/q_auto,f_auto/redbullcom/2019/05/09/b6398f12-7d51-4279-a335-d9ba63e50199/clash-of-clans)
+
 ## Features
  * Ability to invite and filter players to your clan via townhall, player rank, and troop rank
  * Can modify code to add additional filter parameters such as by builder hall
