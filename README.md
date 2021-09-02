@@ -46,8 +46,9 @@ troops = response.get('troops')
 
 You will need to have both `bluestacks5` and `pip` installed on your system and then install the following using pip.
 ```
-$ pip install cv2
-$ pip install PIL
+$ pip install requests
+$ pip install opencv-python
+$ pip install Pillow
 $ pip install numpy
 $ pip install pynput
 $ pip install pyautogui
