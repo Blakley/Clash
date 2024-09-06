@@ -145,10 +145,11 @@ class Members():
 					self.invite()
 					time.sleep(1.5)
 
-				# Go back to player menu
-				self.keyboard.press(Key.esc)
-				self.keyboard.release(Key.esc)
-				time.sleep(1.5)
+				try:
+					x, y = pyautogui.locateCenterOnScreen('back.png', confidence=.8)
+					pyautogui.click(x, y)
+				except Exception as e:
+					return
 
 			# drag to next section, restart function: run in loop 10 times
 			pyautogui.moveTo(self.player_positions['5'])
@@ -175,7 +176,7 @@ class Members():
 			print('failed to exit')		
 
 	# ------------------------------------------------------------------
-	#					    Player Filtering
+	#						Player Filtering
 	# ------------------------------------------------------------------
 
 	def filter(self):
