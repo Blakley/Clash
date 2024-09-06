@@ -15,7 +15,7 @@ We use this function to get the values of specific Clash of Clans buttons and in
 
 Below is a code snippet that shows how buttons from the game are assigned to (x, y) coordinate pairs on the screen.
 You can adjust these values if you experience any issue or if your screen resolution differs from 1920 by 1080p.
- - Note: Run BlueStacks5 in full-screen mode.
+ - <b>Note: Run BlueStacks5 in full-screen mode with 1920 x 1080 resolution</b>.
 ```
 self.positions = {
 			'game_area' : (1373, 35),
@@ -59,4 +59,4 @@ $ pip install pytesseract
 ## Usage
 1. Simply have Clash of Clans running in BlueStacks5, then run the following:
    - execute `python clash.py`
-2. After executing the command, switch to the BlueStacks5 instance, and after 5 seconds, the program will begin execution.
+2. After executing the command and inputting 'Number of players to invite:', immediately click into your BlueStacks window to focus it.
